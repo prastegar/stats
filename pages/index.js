@@ -15,7 +15,7 @@ export default () => (
         <Link href="https://github.com/zeit/next.js#getting-started">
           <a className="card">
             <h3>Getting Started &rarr;</h3>
-            <p>Learn more about Next on Github and in their examples</p>
+            <p>I changed and pushed hoorrraay</p>
           </a>
         </Link>
         <Link href="https://open.segment.com/create-next-app">
