@@ -33,8 +33,8 @@ my-app/
   package.json
   next.config.js
   components/
-    head.js
-    nav.js
+    Head.js
+    Nav.js
   pages/
     index.js
   static/

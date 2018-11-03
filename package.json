@@ -3,13 +3,36 @@
   "author": "Pedram Rastegar",
   "license": "MIT",
   "scripts": {
-    "dev": "next",
+    "dev": "concurrently \"node ./server/server.js\" \"json-server ./db/db.js --watch --port 3003\"",
     "build": "next build",
     "start": "next start"
   },
   "dependencies": {
+    "babel-plugin-module-resolver": "^3.1.1",
+    "babel-plugin-styled-components": "^1.8.0",
+    "es6-promise": "^4.2.5",
+    "express": "^4.16.2",
+    "history": "^4.7.2",
+    "isomorphic-unfetch": "^3.0.0",
+    "localforage": "^1.7.2",
     "next": "^7.0.1",
+    "next-redux-saga": "^3.0.0",
+    "next-redux-wrapper": "^2.0.0",
+    "next-routes": "^1.4.2",
+    "prop-types": "^15.6.2",
     "react": "^16.5.2",
-    "react-dom": "^16.5.2"
+    "react-dom": "^16.5.2",
+    "react-redux": "^5.0.7",
+    "redux": "^4.0.1",
+    "redux-form": "^7.4.2",
+    "redux-orm": "^0.12.1",
+    "redux-persist": "^5.10.0",
+    "redux-persist-transform-encrypt": "^2.0.1",
+    "redux-saga": "^0.16.2",
+    "styled-components": "^4.0.2"
+  },
+  "devDependencies": {
+    "redux-devtools-extension": "^2.13.5",
+    "redux-logger": "^3.0.6"
   }
 }
